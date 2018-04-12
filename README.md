@@ -8,3 +8,6 @@ This end point retrieved the past meetups made for medellinjs community.
 ## methods
 
 ### .length
+the length method returns the number of elements in that array.
+
+###

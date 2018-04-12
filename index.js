@@ -1,11 +1,13 @@
 'use strict';
 
 const {
-  getData
-} = require('./lib/connection');
+  getData,
+  length
+} = require('./lib/index');
 
 const fnThen = (result) => {
-  console.log('result', result);
+  // console.log('array:', result.array);
+  console.log('length:', result.length);
   return result;
 };
 
@@ -15,5 +17,6 @@ const fnCatch = (error) => {
 };
 
 getData()
+  .then(length)
   .then(fnThen)
   .catch(fnCatch);
