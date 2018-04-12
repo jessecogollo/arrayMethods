@@ -16,7 +16,7 @@ The `from` method creates a new Array instance from an array.
 This method received two params, the first one is the original array, the second one is a function to map every element.
 
 ### .isArray
-The `.isArray` method determines whether the passed values is an Array
+The `.isArray` method determines whether the passed values is an Array.
 This method doesn't receive parameters
 
 ###
