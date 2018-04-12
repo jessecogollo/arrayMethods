@@ -27,4 +27,7 @@ This method receive n params.
 The `.concat` method is used to merge two or more arrays and returns a new array.
 This method receive n params.
 
+### .copyWithin
+the last section
+
 ###
