@@ -27,7 +27,8 @@ This method receive n params.
 The `.concat` method is used to merge two or more arrays and returns a new array.
 This method receive n params.
 
-### .copyWithin
-the last section
+### .every
+The `.every` method tests whether all elements in the array pass the test implemented by the provided function.
+This method receive 1 param and is a function.
 
 ###
