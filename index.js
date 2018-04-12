@@ -3,13 +3,15 @@
 const {
   from,
   getData,
+  isArray,
   length
 } = require('./lib/index');
 
 const fnThen = (result) => {
   // console.log('array:', result.array);
   // console.log('length:', result.length);
-  console.log('from:', result.copy);
+  // console.log('from:', result.copy);
+  console.log('isArray:', result.isArray);
   return result;
 };
 
@@ -21,5 +23,6 @@ const fnCatch = (error) => {
 getData()
   .then(length)
   .then(from)
+  .then(isArray)
   .then(fnThen)
   .catch(fnCatch);
