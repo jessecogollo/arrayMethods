@@ -1,12 +1,16 @@
 {
   "name": "arrayMethods",
   "version": "1.0.0",
-  "description": "",
+  "description": "the pourpuse of this repository is show all the native array methods of js.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "@jessecogollo",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.85.0"
+  }
 }
