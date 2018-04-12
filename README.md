@@ -13,10 +13,14 @@ This method doesn't receive paramenters
 
 ### .from
 The `from` method creates a new Array instance from an array.
-This method received two params, the first one is the original array, the second one is a function to map every element.
+This method receive two params, the first one is the original array, the second one is a function to map every element.
 
 ### .isArray
 The `.isArray` method determines whether the passed values is an Array.
 This method doesn't receive parameters
+
+### .of
+The `.of` method creates a new Array instance with a variable number of arguments.
+This method receive n params.
 
 ###
