@@ -23,4 +23,8 @@ This method doesn't receive parameters
 The `.of` method creates a new Array instance with a variable number of arguments.
 This method receive n params.
 
+### .concat
+The `.concat` method is used to merge two or more arrays and returns a new array.
+This method receive n params.
+
 ###

@@ -1,6 +1,7 @@
 'use strict';
 
 const {
+  concat,
   from,
   getData,
   isArray,
@@ -13,7 +14,8 @@ const fnThen = (result) => {
   // console.log('length:', result.length);
   // console.log('from:', result.copy);
   // console.log('isArray:', result.isArray);
-  console.log('of:', result.of);
+  // console.log('of:', result.of);
+  console.log('concat:', result.concat);// .length = result.array.length + result.copy.length
   return result;
 };
 
@@ -27,5 +29,6 @@ getData()
   .then(from)
   .then(isArray)
   .then(of)
+  .then(concat)
   .then(fnThen)
   .catch(fnCatch);
