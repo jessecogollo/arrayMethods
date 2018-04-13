@@ -39,4 +39,8 @@ This method receive between 1 and 3 parameters. the first one is the static valu
 The `.filter` method creates a new array with all elements that pass the test implemented by the provided function.
 This method receive 1 param and is a function
 
+### .find
+The `.find` method return the first the value of the first element in the array that satisfies the provided testing function.
+This method receive 1 param and is a function
+
 ###
