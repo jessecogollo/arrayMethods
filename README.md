@@ -35,4 +35,8 @@ This method receive 1 param and is a function.
 The `.fill` method fills all elements of an array from start to an end index with a static value. the end index is not inclued.
 This method receive between 1 and 3 parameters. the first one is the static value, the second one the start index and the last one is the end index.
 
+### .filter
+The `.filter` method creates a new array with all elements that pass the test implemented by the provided function.
+This method receive 1 param and is a function
+
 ###
