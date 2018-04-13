@@ -3,6 +3,7 @@
 const {
   concat,
   every,
+  fill,
   from,
   getData,
   isArray,
@@ -17,7 +18,8 @@ const fnThen = (result) => {
   // console.log('isArray:', result.isArray);
   // console.log('of:', result.of);
   // console.log('concat:', result.concat);// .length = result.array.length + result.copy.length
-  console.log('every:', result.every);
+  // console.log('every:', result.every);
+  console.log('fill:', result.fill);
   return result;
 };
 
@@ -33,5 +35,6 @@ getData()
   .then(of)
   .then(concat)
   .then(every)
+  .then(fill)
   .then(fnThen)
   .catch(fnCatch);
