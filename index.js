@@ -7,6 +7,7 @@ const {
   filter,
   find,
   findIndex,
+  forEach,
   from,
   getData,
   isArray,
@@ -25,7 +26,8 @@ const fnThen = (result) => {
   // console.log('fill:', result.fill);
   // console.log('filter:', result.filter);
   // console.log('find:', result.find);
-  console.log('findIndex:', result.findIndex);
+  // console.log('findIndex:', result.findIndex);
+  // console.log('forEach:', result.forEach);
   return result;
 };
 
@@ -45,5 +47,6 @@ getData()
   .then(filter)
   .then(find)
   .then(findIndex)
+  .then(forEach)
   .then(fnThen)
   .catch(fnCatch);

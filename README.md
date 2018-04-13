@@ -47,4 +47,8 @@ This method receive 1 param and is a function.
 The `findIndex` method the index of the first element in the array that satisfies the provided testing function, otherwise -1 is returned.
 This method receive 1 param and is a function.
 
+### .forEach
+The `.forEach` method executes a provided function once for each element.
+This method receive 1 param and is a function.
+
 ###
