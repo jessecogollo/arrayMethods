@@ -51,4 +51,8 @@ This method receive 1 param and is a function.
 The `.forEach` method executes a provided function once for each element.
 This method receive 1 param and is a function.
 
+### .includes
+The `.includes` method determines whether an array includes a certain element, returning true or false as appropiate.
+This method receive 1 param and is the element to find.
+
 ###
