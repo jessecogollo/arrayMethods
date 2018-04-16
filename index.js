@@ -11,6 +11,7 @@ const {
   from,
   getData,
   includes,
+  indexOf,
   isArray,
   length,
   of
@@ -29,7 +30,8 @@ const fnThen = (result) => {
   // console.log('find:', result.find);
   // console.log('findIndex:', result.findIndex);
   // console.log('forEach:', result.forEach);
-  console.log('includes:', result.includes);
+  // console.log('includes:', result.includes);
+  console.log('indexOf:', result.indexOf);
   return result;
 };
 
@@ -51,5 +53,6 @@ getData()
   .then(findIndex)
   .then(forEach)
   .then(includes)
+  .then(indexOf)
   .then(fnThen)
   .catch(fnCatch);

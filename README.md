@@ -55,4 +55,8 @@ This method receive 1 param and is a function.
 The `.includes` method determines whether an array includes a certain element, returning true or false as appropiate.
 This method receive 1 param and is the element to find.
 
+### .indexOf
+The `indexOf` method returns the first index at which a given element can be found in the array, or -1 if it is not present.
+This method receive 2 params and the first one is the element to find and the second one (optional) is the index to start.
+
 ###
