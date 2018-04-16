@@ -13,6 +13,7 @@ const {
   includes,
   indexOf,
   isArray,
+  join,
   length,
   of
 } = require('./lib/index');
@@ -31,7 +32,8 @@ const fnThen = (result) => {
   // console.log('findIndex:', result.findIndex);
   // console.log('forEach:', result.forEach);
   // console.log('includes:', result.includes);
-  console.log('indexOf:', result.indexOf);
+  // console.log('indexOf:', result.indexOf);
+  console.log('join:', result.join);
   return result;
 };
 
@@ -54,5 +56,6 @@ getData()
   .then(forEach)
   .then(includes)
   .then(indexOf)
+  .then(join)
   .then(fnThen)
   .catch(fnCatch);

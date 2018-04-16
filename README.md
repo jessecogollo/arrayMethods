@@ -56,7 +56,11 @@ The `.includes` method determines whether an array includes a certain element, r
 This method receive 1 param and is the element to find.
 
 ### .indexOf
-The `indexOf` method returns the first index at which a given element can be found in the array, or -1 if it is not present.
+The `.indexOf` method returns the first index at which a given element can be found in the array, or -1 if it is not present.
 This method receive 2 params and the first one is the element to find and the second one (optional) is the index to start.
+
+### .join
+The `.join` method joins all elements of an array into a string and returns this string.
+This method receive 1 param and is the separator.
 
 ###
