@@ -9,7 +9,7 @@ This end point retrieved the past meetups made for medellinjs community.
 
 ### .length
 the `length` method returns the number of elements in that array.
-This method doesn't receive paramenters
+This method doesn't receive paramenters.
 
 ### .from
 The `from` method creates a new Array instance from an array.
@@ -17,7 +17,7 @@ This method receive two params, the first one is the original array, the second 
 
 ### .isArray
 The `.isArray` method determines whether the passed values is an Array.
-This method doesn't receive parameters
+This method doesn't receive parameters.
 
 ### .of
 The `.of` method creates a new Array instance with a variable number of arguments.
@@ -62,5 +62,9 @@ This method receive 2 params and the first one is the element to find and the se
 ### .join
 The `.join` method joins all elements of an array into a string and returns this string.
 This method receive 1 param and is the separator.
+
+### .keys
+The `.keys` method returns a new array that contains the keys for each index in the array.
+This method doesn't receive paramenters.
 
 ###
