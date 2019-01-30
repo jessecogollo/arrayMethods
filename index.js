@@ -20,7 +20,8 @@ const {
   map,
   of,
   pop,
-  push
+  push,
+  reduce
 } = require('./lib/index');
 
 const fnThen = (result) => {
@@ -43,7 +44,8 @@ const fnThen = (result) => {
   // console.log('lastIndexOf:', result.lastIndexOf);
   // console.log('map:', result.map);
   // console.log('pop:', result.pop);
-  console.log('push:', result.push);
+  // console.log('push:', result.push);
+  console.log('reduce:', result.reduce);
   return result;
 };
 
@@ -72,5 +74,6 @@ getData()
   .then(map)
   .then(pop)
   .then(push)
+  .then(reduce)
   .then(fnThen)
   .catch(fnCatch);
