@@ -17,6 +17,7 @@ const {
   keys,
   lastIndexOf,
   length,
+  map,
   of
 } = require('./lib/index');
 
@@ -37,7 +38,8 @@ const fnThen = (result) => {
   // console.log('indexOf:', result.indexOf);
   // console.log('join:', result.join);
   // console.log('keys:', result.keys);
-  console.log('lastIndexOf:', result.lastIndexOf);
+  // console.log('lastIndexOf:', result.lastIndexOf);
+  console.log('map:', result.map);
   return result;
 };
 
@@ -63,5 +65,6 @@ getData()
   .then(join)
   .then(keys)
   .then(lastIndexOf)
+  .then(map)
   .then(fnThen)
   .catch(fnCatch);
