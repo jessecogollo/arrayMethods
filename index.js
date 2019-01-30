@@ -18,7 +18,8 @@ const {
   lastIndexOf,
   length,
   map,
-  of
+  of,
+  pop
 } = require('./lib/index');
 
 const fnThen = (result) => {
@@ -39,7 +40,8 @@ const fnThen = (result) => {
   // console.log('join:', result.join);
   // console.log('keys:', result.keys);
   // console.log('lastIndexOf:', result.lastIndexOf);
-  console.log('map:', result.map);
+  // console.log('map:', result.map);
+  console.log('pop:', result.pop);
   return result;
 };
 
@@ -66,5 +68,6 @@ getData()
   .then(keys)
   .then(lastIndexOf)
   .then(map)
+  .then(pop)
   .then(fnThen)
   .catch(fnCatch);
