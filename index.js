@@ -22,7 +22,8 @@ const {
   pop,
   push,
   reduce,
-  reduceright
+  reduceright,
+  reverse
 } = require('./lib/index');
 
 const fnThen = (result) => {
@@ -47,7 +48,8 @@ const fnThen = (result) => {
   // console.log('pop:', result.pop);
   // console.log('push:', result.push);
   // console.log('reduce:', result.reduce);
-  console.log('reduceright:', result.reduceright);
+  // console.log('reduceright:', result.reduceright);
+  console.log('reverse:', result.reverse);
   return result;
 };
 
@@ -78,5 +80,6 @@ getData()
   .then(push)
   .then(reduce)
   .then(reduceright)
+  .then(reverse)
   .then(fnThen)
   .catch(fnCatch);
