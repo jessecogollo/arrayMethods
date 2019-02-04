@@ -23,7 +23,8 @@ const {
   push,
   reduce,
   reduceright,
-  reverse
+  reverse,
+  shift
 } = require('./lib/index');
 
 const fnThen = (result) => {
@@ -49,7 +50,8 @@ const fnThen = (result) => {
   // console.log('push:', result.push);
   // console.log('reduce:', result.reduce);
   // console.log('reduceright:', result.reduceright);
-  console.log('reverse:', result.reverse);
+  // console.log('reverse:', result.reverse);
+  console.log('shift:', result.shift);
   return result;
 };
 
@@ -81,5 +83,6 @@ getData()
   .then(reduce)
   .then(reduceright)
   .then(reverse)
+  .then(shift)
   .then(fnThen)
   .catch(fnCatch);
