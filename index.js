@@ -31,7 +31,8 @@ const {
   splice,
   tolocalestring,
   tosource,
-  tostring
+  tostring,
+  unshift
 } = require('./lib/index');
 
 const fnThen = (result) => {
@@ -65,7 +66,8 @@ const fnThen = (result) => {
   // console.log('splice:', result.splice);
   // console.log('tolocalestring:', result.tolocalestring);
   // console.log('tosource:', result.tosource);
-  console.log('tostring:', result.tostring);
+  // console.log('tostring:', result.tostring);
+  console.log('unshift:', result.unshift);
   return result;
 };
 
@@ -105,5 +107,6 @@ getData()
   .then(tolocalestring)
   .then(tosource)
   .then(tostring)
+  .then(unshift)
   .then(fnThen)
   .catch(fnCatch);
