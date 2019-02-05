@@ -32,7 +32,8 @@ const {
   tolocalestring,
   tosource,
   tostring,
-  unshift
+  unshift,
+  values
 } = require('./lib/index');
 
 const fnThen = (result) => {
@@ -67,7 +68,8 @@ const fnThen = (result) => {
   // console.log('tolocalestring:', result.tolocalestring);
   // console.log('tosource:', result.tosource);
   // console.log('tostring:', result.tostring);
-  console.log('unshift:', result.unshift);
+  // console.log('unshift:', result.unshift);
+  console.log('values:', result.values);
   return result;
 };
 
@@ -108,5 +110,6 @@ getData()
   .then(tosource)
   .then(tostring)
   .then(unshift)
+  .then(values)
   .then(fnThen)
   .catch(fnCatch);
