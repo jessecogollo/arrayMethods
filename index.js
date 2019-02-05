@@ -30,7 +30,8 @@ const {
   sort,
   splice,
   tolocalestring,
-  tosource
+  tosource,
+  tostring
 } = require('./lib/index');
 
 const fnThen = (result) => {
@@ -63,7 +64,8 @@ const fnThen = (result) => {
   // console.log('sort:', result.sort);
   // console.log('splice:', result.splice);
   // console.log('tolocalestring:', result.tolocalestring);
-  console.log('tosource:', result.tosource);
+  // console.log('tosource:', result.tosource);
+  console.log('tostring:', result.tostring);
   return result;
 };
 
@@ -102,5 +104,6 @@ getData()
   .then(splice)
   .then(tolocalestring)
   .then(tosource)
+  .then(tostring)
   .then(fnThen)
   .catch(fnCatch);
