@@ -26,7 +26,8 @@ const {
   reverse,
   shift,
   slice,
-  some
+  some,
+  sort
 } = require('./lib/index');
 
 const fnThen = (result) => {
@@ -55,7 +56,8 @@ const fnThen = (result) => {
   // console.log('reverse:', result.reverse);
   // console.log('shift:', result.shift);
   // console.log('slice:', result.slice);
-  console.log('some:', result.some);
+  // console.log('some:', result.some);
+  console.log('sort:', result.sort);
   return result;
 };
 
@@ -90,5 +92,6 @@ getData()
   .then(shift)
   .then(slice)
   .then(some)
+  .then(sort)
   .then(fnThen)
   .catch(fnCatch);
