@@ -28,7 +28,8 @@ const {
   slice,
   some,
   sort,
-  splice
+  splice,
+  tolocalestring
 } = require('./lib/index');
 
 const fnThen = (result) => {
@@ -59,7 +60,8 @@ const fnThen = (result) => {
   // console.log('slice:', result.slice);
   // console.log('some:', result.some);
   // console.log('sort:', result.sort);
-  console.log('splice:', result.splice);
+  // console.log('splice:', result.splice);
+  console.log('tolocalestring:', result.tolocalestring);
   return result;
 };
 
@@ -96,5 +98,6 @@ getData()
   .then(some)
   .then(sort)
   .then(splice)
+  .then(tolocalestring)
   .then(fnThen)
   .catch(fnCatch);
