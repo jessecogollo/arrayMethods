@@ -2,6 +2,7 @@
 
 const {
   concat,
+  copywithin,
   every,
   fill,
   filter,
@@ -69,7 +70,8 @@ const fnThen = (result) => {
   // console.log('tosource:', result.tosource);
   // console.log('tostring:', result.tostring);
   // console.log('unshift:', result.unshift);
-  console.log('values:', result.values);
+  // console.log('values:', result.values);
+  console.log('copywithin:', result.copywithin);
   return result;
 };
 
@@ -111,5 +113,6 @@ getData()
   .then(tostring)
   .then(unshift)
   .then(values)
+  .then(copywithin)
   .then(fnThen)
   .catch(fnCatch);
