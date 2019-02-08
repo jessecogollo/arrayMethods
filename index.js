@@ -34,7 +34,8 @@ const {
   tosource,
   tostring,
   unshift,
-  values
+  values,
+  entries
 } = require('./lib/index');
 
 const fnThen = (result) => {
@@ -71,7 +72,8 @@ const fnThen = (result) => {
   // console.log('tostring:', result.tostring);
   // console.log('unshift:', result.unshift);
   // console.log('values:', result.values);
-  console.log('copywithin:', result.copywithin);
+  // console.log('copywithin:', result.copywithin);
+  console.log('entries:', result.entries);
   return result;
 };
 
@@ -114,5 +116,6 @@ getData()
   .then(unshift)
   .then(values)
   .then(copywithin)
+  .then(entries)
   .then(fnThen)
   .catch(fnCatch);
