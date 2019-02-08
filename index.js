@@ -36,7 +36,8 @@ const {
   unshift,
   values,
   entries,
-  flat
+  flat,
+  flatmap
 } = require('./lib/index');
 
 const fnThen = (result) => {
@@ -75,7 +76,8 @@ const fnThen = (result) => {
   // console.log('values:', result.values);
   // console.log('copywithin:', result.copywithin);
   // console.log('entries:', result.entries);
-  console.log('flat:', result.flat);
+  // console.log('flat:', result.flat);
+  console.log('flatmap:', result.flatmap);
   return result;
 };
 
@@ -120,5 +122,6 @@ getData()
   .then(copywithin)
   .then(entries)
   .then(flat)
+  .then(flatmap)
   .then(fnThen)
   .catch(fnCatch);
